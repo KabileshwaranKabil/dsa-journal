@@ -10,9 +10,9 @@ An array is a collection of elements of the same data type stored in contiguous 
 [Read more](https://kabileshwarankabil.github.io/dsa/2026/01/01/day-1-arrays.html)
 
 ### Problems
-1. [Build Array from Permutation](arrays\Build_Array_from_Permutation)
-2. [Concatenation of Array](arrays\Concatenation_of_Array)
-3. [Running Sum of 1d Array](arrays\Running_Sum_of_1d_Array)
+1. [Build Array from Permutation](arrays/Build_Array_from_Permutation)
+2. [Concatenation of Array](arrays/Concatenation_of_Array)
+3. [Running Sum of 1d Array](arrays/Running_Sum_of_1d_Array)
 
 
 --- 
