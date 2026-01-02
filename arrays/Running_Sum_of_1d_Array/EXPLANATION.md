@@ -25,10 +25,11 @@ Constraints:
 1 <= nums.length <= 1000
 -10^6 <= nums[i] <= 10^6
 
-# Intuition
+## **Brute Force Approach**
+### Intuition
 Initially, I tried using a single loop, but it didn’t work correctly. So, I decided to use two nested loops to calculate the running sum.
 
-# Approach
+### Approach
 1. Create an array runningSum of size n (n is the length of nums).
 2. Loop through the array with index i from 0 to n-1
 3. Initialize sum = 0 for each i.
@@ -36,14 +37,14 @@ Initially, I tried using a single loop, but it didn’t work correctly. So, I de
 5. Assign runningSum[i] = sum.
 6. After the loops, return runningSum.
 
-# Complexity
+### Complexity
 - Time complexity:
     - Two nested loops give O(n) * O(n) = O(n²)
 
 - Space complexity:
     - O(n) for the runningSum array.
 
-# Code
+### Code
 ```java []
 class Solution {
     public int[] runningSum(int[] nums) {
@@ -55,6 +56,37 @@ class Solution {
                 sum+=nums[j];
             }
             runningSum[i]=sum;
+        }
+        return runningSum;
+    }
+}
+```
+## **Prefix Sum Approach**
+
+### Intuition
+I initially solved this problem using a brute-force approach with nested `for` loops. After that, I explored the prefix sum technique, which allows the cumulative sum to be computed more efficiently in a single pass.
+
+### Approach
+This solution uses the prefix sum approach.
+- Create a new array to store the running sum.
+- Initialize the first element with the first value of the input array.
+- For each subsequent index, add the current element to the running sum of the previous index.
+
+### Complexity
+- Time complexity:
+    - O(n), since the array is traversed once.
+
+- Space complexity:
+    - O(n), because an additional array is used to store the running sum.
+
+### Code
+```java []
+class Solution {
+    public int[] runningSum(int[] nums) {
+        int[] runningSum=new int[nums.length];
+        runningSum[0]=nums[0];
+        for(int i=1;i<nums.length;i++){
+            runningSum[i]=runningSum[i-1]+nums[i];
         }
         return runningSum;
     }
