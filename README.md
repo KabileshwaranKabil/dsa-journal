@@ -19,6 +19,7 @@ Also you can watch my youtube video for further clarification: [video explanatio
 6. **[Number of Good Pairs](arrays/Number_of_Good_Pairs/)**
 7. **[Shuffle the Array](arrays/Shuffle_the_Array/)**
 8. **[Check IF N and It's Double Exists](arrays/Check_IF_N_Its_Double_Exits/)**
+9. **[Search Insert Position](arrays/Search_Insert_Position/)**
 --- 
 
 
